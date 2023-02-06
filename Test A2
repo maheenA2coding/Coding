@@ -1,0 +1,37 @@
+Module Module1
+
+    Sub Main()
+        Dim yearsize As Integer
+        Dim temp1 As Integer
+        Dim temp2 As Integer
+        Dim temp3 As Integer
+        Dim Name(0 To 249) As Integer
+        Dim counter As Integer
+        Dim counter1 As Integer
+        Dim counter2 As Integer
+        Dim Score(0 To 249) As Integer
+        Dim student1 As Integer
+        Dim student As Integer
+        Dim Student2 As Integer
+
+        yearsize = 249
+        For student = 2 To yearsize
+            temp1 = Score(student)
+            temp2 = Score(student1)
+            temp3 = Score(Student2)
+            counter = student
+            While counter > 1 And Score(counter - 1) < temp1
+                Score(counter) = Score(counter - 1)
+                Name(counter - 1) = Name(counter1 - 1)
+                Name(counter2) = Name(counter2 - 1)
+                counter = counter - 1
+            End While
+            Score(counter) = temp1
+            Name(counter1) = temp2
+            Name(counter2) = temp3
+
+        Next
+        yearsize = yearsize - 1
+    End Sub
+
+End Module
